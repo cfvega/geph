@@ -2,7 +2,7 @@ GEPH
 ==========
 Integrante[s]:
 --------------
-|  USUARIO DI  |       NOMBRE       |     ROL USM     |
+|  USUARIO  |       NOMBRE       |     ROL USM     |
 |:------------:|:------------------:|:-----------:|
 |[**_....._**](....)|[_Sergio Maldonado Olgin_](mailto:sergio.maldonado@sansano.usm.cl)|*201673041-9*|
 |[**_....._**](....)|[_Ariel Zúñiga Ramirez_](mailto:ariel.zunigar@sansano.usm.cl)|*201673092-3*|
