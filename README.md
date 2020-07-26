@@ -19,7 +19,7 @@ API
 ````
 En desarrollo
 ````
-Para obtener todos los pabellones ejecutar peticion **GET**  `/pabellon` y obtendrá una informacion similar a:
+* Para obtener todos los pabellones ejecutar peticion **GET**  `/pabellon` y obtendrá una informacion similar a:
 ```javascript
 [
   {
@@ -31,7 +31,7 @@ Para obtener todos los pabellones ejecutar peticion **GET**  `/pabellon` y obten
 ]
 ````
 
-Para solicitar información de un pabellon ejecutar peticion **GET**  `/pabellon/{id}` y obtendrá una informacion similar a:
+* Para solicitar información de un pabellon ejecutar peticion **GET**  `/pabellon/{id}` y obtendrá una informacion similar a:
 ```javascript
 {
   id: INT,
@@ -41,7 +41,7 @@ Para solicitar información de un pabellon ejecutar peticion **GET**  `/pabellon
 }
 ````
 
-Para solicitar información de pabellones en una sala ejecutar peticion **GET**  `/pabellon/sala/{id}` y obtendrá una informacion similar a:
+* Para solicitar información de pabellones en una sala ejecutar peticion **GET**  `/pabellon/sala/{id}` y obtendrá una informacion similar a:
 ```javascript
 [
   {
@@ -53,7 +53,7 @@ Para solicitar información de pabellones en una sala ejecutar peticion **GET** 
 ]
 ````
 
-Para agregar pabellon a una sala ejecutar peticion **POST**  `/pabellon/add` con BodyRequest
+* Para agregar pabellon a una sala ejecutar peticion **POST**  `/pabellon/add` con BodyRequest
 ```javascript
 {
   "sala": INT,
@@ -62,5 +62,14 @@ Para agregar pabellon a una sala ejecutar peticion **POST**  `/pabellon/add` con
 }
 ````
 Responderá true | Error Object
+
+* Para actualizar estado del pbellon ejecutar peticion **PUT**  `/pabellon/estado/{id}` con BodyRequest
+```javascript
+{
+  "sala": INT,
+  "estado": BOOLEAN,
+  "descripcion": STRING
+}
+````
 
 Para eliminar pabellon ejecutar peticion **GET**  `/pabellon/delete/{id}` => true | Error Object
