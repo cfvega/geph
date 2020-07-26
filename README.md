@@ -19,4 +19,48 @@ API
 ````
 En desarrollo
 ````
+Para obtener todos los pabellones ejecutar peticion **GET**  `/pabellon` y obtendrá una informacion similar a:
+```javascript
+[
+  {
+    id: INT,
+    sala: INT,
+    descripcion: STRING,
+    estado: BOOLEAN
+  }
+]
+````
 
+Para solicitar información de un pabellon ejecutar peticion **GET**  `/pabellon/{id}` y obtendrá una informacion similar a:
+```javascript
+{
+  id: INT,
+  sala: INT,
+  descripcion: STRING,
+  estado: BOOLEAN
+}
+````
+
+Para solicitar información de pabellones en una sala ejecutar peticion **GET**  `/pabellon/sala/{id}` y obtendrá una informacion similar a:
+```javascript
+[
+  {
+    id: INT,
+    sala: INT,
+    descripcion: STRING,
+    estado: BOOLEAN
+  }
+]
+````
+
+Para agregar pabellon a una sala ejecutar peticion **POST**  `/pabellon/add` con BodyRequest
+```javascript
+{
+  "sala": INT,
+  "estado": BOOLEAN,
+  "descripcion": STRING
+}
+````
+Responderá true | Error Object
+
+Para eliminar pabellon ejecutar peticion **GET**  `/pabellon/delete/{id}` => true | Error Object
