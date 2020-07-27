@@ -19,7 +19,7 @@ API
 ````
 En desarrollo
 ````
-* Para obtener todos los pabellones ejecutar peticion **GET**  `/pabellon` y obtendrá una informacion similar a:
+* Para obtener todos los pabellones ejecutar petición **GET**  `/pabellon` y obtendrá una información similar a:
 ```javascript
 [
   {
@@ -31,7 +31,7 @@ En desarrollo
 ]
 ````
 
-* Para solicitar información de un pabellon ejecutar peticion **GET**  `/pabellon/{id}` y obtendrá una informacion similar a:
+* Para solicitar información de un pabellón ejecutar petición **GET**  `/pabellon/{id}` y obtendrá una información similar a:
 ```javascript
 {
   id: INT,
@@ -41,7 +41,7 @@ En desarrollo
 }
 ````
 
-* Para solicitar información de pabellones en una sala ejecutar peticion **GET**  `/pabellon/sala/{id}` y obtendrá una informacion similar a:
+* Para solicitar información de pabellones en una sala ejecutar petición **GET**  `/pabellon/sala/{id}` y obtendrá una información similar a:
 ```javascript
 [
   {
@@ -53,7 +53,7 @@ En desarrollo
 ]
 ````
 
-* Para agregar pabellon a una sala ejecutar peticion **POST**  `/pabellon/add` con BodyRequest
+* Para agregar pabellón a una sala ejecutar petición **POST**  `/pabellon/add` con BodyRequest
 ```javascript
 {
   "sala": INT,
@@ -63,7 +63,7 @@ En desarrollo
 ````
 Responderá true | Error Object
 
-* Para actualizar estado del pbellon ejecutar peticion **PUT**  `/pabellon/estado/{id}` con BodyRequest
+* Para actualizar estado del pabellón ejecutar petición **PUT**  `/pabellon/estado/{id}` con BodyRequest
 ```javascript
 {
   "sala": INT,
@@ -73,3 +73,51 @@ Responderá true | Error Object
 ````
 
 Para eliminar pabellon ejecutar peticion **GET**  `/pabellon/delete/{id}` => true | Error Object
+
+
+* Para obtener todas las salas de recuperación ejecutar petición **GET**  `/salas` y obtendrá una informacion similar a:
+```javascript
+[
+  {
+    id: INT,
+    cama: INT,
+    sala: INT,
+    descripcion: STRING,
+    estado: BOOLEAN
+  }
+]
+````
+
+* Para solicitar información de una sala de recuperación ejecutar petición **GET**  `/salas/{id}` y obtendrá una información similar a:
+```javascript
+{
+  id: INT,
+  cama: INT,
+  sala: INT,
+  descripcion: STRING,
+  estado: BOOLEAN
+}
+````
+
+* Para agregar una sala de recuperación **POST**  `/salas/add` con BodyRequest
+```javascript
+{
+  "cama": INT,
+  "sala": INT,
+  "estado": BOOLEAN,
+  "descripcion": STRING
+}
+````
+Responderá true | Error Object
+
+* Para actualizar estado de una sala de recuperación ejecutar petición **PUT**  `/salas/estado/{id}` con BodyRequest
+```javascript
+{
+  "cama": INT,
+  "sala": INT,
+  "estado": BOOLEAN,
+  "descripcion": STRING
+}
+````
+
+Para eliminar una sala de recuperación ejecutar petición **GET**  `/salas/delete/{id}` => true | Error Object
