@@ -14,10 +14,16 @@ GEPH es uno de los microservicio que conforma una plataforma inteligente de asig
 
 Como equipo de desarrollo se nos asignó desarrollar **Pabellones/Salas de Recuparación**.
 
+Frontend
+--------
+Frontend está en colaboracion con el equipo de **Equipamientos** en: [JBenas
+/
+service-front](https://github.com/JBenas/service-front)
+
 API
 -------
 ````
-En desarrollo
+Proximo a modificación
 ````
 * Para obtener todos los pabellones ejecutar petición **GET**  `/pabellon` y obtendrá una información similar a:
 ```javascript
